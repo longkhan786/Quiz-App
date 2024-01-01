@@ -3,6 +3,8 @@ import { useState } from "react";
 import QuestionTimer from "./QuestionTimer.jsx";
 import Answers from "./Answers.jsx";
 import QUESTION from "../questions.js";
+
+// million-ignore
 export default function Questions({ index, onSelectAnswer, handleSkipAnswer }) {
   const [answer, setAnswer] = useState({
     selectedAnswer: "",

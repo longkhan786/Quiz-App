@@ -1,4 +1,6 @@
 import Quiz from '../assets/quiz-logo.png';
+
+// million-ignore
 function Header() {
     return (
         <header>

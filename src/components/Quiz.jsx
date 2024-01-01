@@ -4,6 +4,7 @@ import QUESTIONS from "../questions.js";
 import Questions from "./Questions.jsx";
 import Summary from "./Summary.jsx";
 
+// million-ignore
 export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
 

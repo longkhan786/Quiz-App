@@ -1,6 +1,7 @@
 import quizComplete from "../assets/quiz-complete.png";
 import QUESTIONS from "../questions.js";
 
+// million-ignore
 export default function Summary({ userAnswers }) {
     const skippedAnswer = userAnswers.filter((answer) => answer === null);
           const correctAnswer = userAnswers.filter(
