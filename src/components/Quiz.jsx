@@ -17,10 +17,12 @@ export default function Quiz() {
     });
   }, []);
 
-  const handleSkipAnswer = useCallback(() => handleSelectAnswer(null),[handleSelectAnswer]);
+  const handleSkipAnswer = useCallback(() => handleSelectAnswer(null), [handleSelectAnswer]);
+  const handleRestartQuiz = useCallback(() => setUserAnswers([]), [setUserAnswers]);
+  
   if (isQuesComplete) {
     return (
-      <Summary userAnswers={userAnswers} />
+      <Summary userAnswers={userAnswers} restart={handleRestartQuiz}/>
     );
   }
 
